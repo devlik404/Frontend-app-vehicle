@@ -1,0 +1,28 @@
+body{
+    margin: 2px;
+}
+a{
+text-decoration: none;
+color: black;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.act-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* button */
+.btn2 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}

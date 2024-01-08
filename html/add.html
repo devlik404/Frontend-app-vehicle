@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>add Kendaraan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="alert-add"></div>
+    <div class="container">
+      <h1 class="text-center">Tambah Data Kendaraan</h1>
+      <form id="addForm">
+        <div class="container text-center ">
+          <div class="row">
+            <div class="col">
+              <div class="form-group text-start p-lg-3">
+                <label for="noRegistrasi">No. Registrasi Kendaraan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="noRegistrasi"
+                  name="noRegistrasi"
+                />
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="namaPemilik">Nama Pemilik</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="namaPemilik"
+                  name="namaPemilik"
+                />
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="merkKendaraan">Merk Kendaraan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="merkKendaraan"
+                  name="merkKendaraan"
+                />
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="validationAlamat" class="form-label">Alamat</label>
+                <textarea
+                  class="form-control"
+                  id="validationAlamat"
+                  name="validationAlamat"
+                  placeholder="alamat kamu.."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group text-start p-lg-3">
+                <label for="tahunPembuatan">Tahun Pembuatan</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tahunPembuatan"
+                  name="tahunPembuatan"
+                />
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="kapasitasSilinder">Kapasitas Silinder</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="kapasitasSilinder"
+                  name="kapasitasSilinder"
+                />
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="warnaKendaraan">Warna Kendaraan</label>
+                <select class="form-select" required id="warnaKendaraan">
+                    <option value="">Pilih Warna</option>
+                    <option value="Merah">Merah</option>
+                    <option value="Hitam">Hitam</option>
+                    <option value="Biru">Biru</option>
+                    <option value="Abu-Abu">Abu-Abu</option>
+                  </select>
+              </div>
+              <div class="form-group text-start p-lg-3">
+                <label for="bahanBakar">Bahan Bakar</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bahanBakar"
+                  name="bahanBakar"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-add p-4">
+          <button type="submit" class="btn btn-primary">Simpan <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
+            <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1z"/>
+          </svg></button>
+          <button type="reset" class="btn btn-info "><a href="/html/index.html">Kembali <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+            <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+          </svg></a> </button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/javascript/index.js"></script>
+  </body>
+</html>
