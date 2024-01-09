@@ -11,8 +11,8 @@ Proyek ini tidak memerlukan server khusus karena tidak ada dependensi server sis
 Silahkan install live Server untuk menjalakan file HTML.
 
 ## Documentasi:
-### Live Server : `https://github.com/ritwickdey/live-server-web-extension/blob/master/docs/Setup.md`. 
-### Jquery : `https://jquery.com/`
+Live Server : `https://github.com/ritwickdey/live-server-web-extension/blob/master/docs/Setup.md`;
+Jquery : `https://jquery.com/`
 
 ## Request
 -pastikan port anda berjalan di locahost:5500 untuk terhubung dengan server/Backend ;
